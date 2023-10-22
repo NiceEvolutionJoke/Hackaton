@@ -1,0 +1,35 @@
+.input {
+    & input {
+        display: none;
+    }
+    & label {
+        height: 200px;
+        width: 200px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+}
+.items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.image {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    & img {
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

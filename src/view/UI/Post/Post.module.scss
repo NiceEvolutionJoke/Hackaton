@@ -1,0 +1,147 @@
+.post {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 300px;
+}
+.postImg {
+    flex: 0 1 50%;
+    background-color: #fff;
+    position: relative;
+    height: 100%;
+    & img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+    }
+}
+.postBody {
+    flex: 0 1 50%;
+    padding: 25px 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.postUser {
+    margin-bottom: 22px;
+    display: flex;
+    gap: 9px;
+    & img {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+.postUserBody {
+}
+.postUserName {
+    color: #000;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 2px;
+}
+.posyUserSubcribes {
+    color: #787878;
+    font-size: 12px;
+    line-height: 20px;
+}
+.postTitle {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 24px;
+}
+.postText {
+    color: #787878;
+    font-size: 14px;
+    margin-bottom: 50px;
+    line-height: 20px;
+}
+.postBottom {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.postBottomBody {
+    display: flex;
+    gap: 30px;
+    & div {
+        color: #000;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        cursor: pointer;
+    }
+}
+.postLikes {
+    display: flex;
+    align-items: center;
+
+    & svg path {
+        transition: 0.3s;
+    }
+    &.active {
+        & svg path {
+            fill: #000;
+            stroke: #fff;
+        }
+    }
+}
+.postComments {
+    display: flex;
+    align-items: center;
+}
+.postDislike {
+    display: flex;
+    align-items: center;
+}
+.postShare {
+    cursor: pointer;
+}
+.postUserInfo {
+    display: flex;
+    color: #787878;
+    align-items: center;
+    font-size: 12px;
+    line-height: 10px;
+    & p {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        margin: 0 7px;
+        background-color: #787878;
+    }
+}
+/* .postUserSubBody {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+} */
+.postImg::before {
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 3;
+    content: "";
+    border-radius: 20px 0 0 20px;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+.postImg:hover::before {
+    opacity: 1;
+    visibility: visible;
+}

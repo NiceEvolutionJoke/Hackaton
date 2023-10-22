@@ -1,0 +1,61 @@
+.InputDropDown {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+.react-select__placeholder {
+    font-size: 20px;
+    line-height: 28px;
+    color: #b4b4b4;
+}
+.react-select__control {
+    height: 50px;
+    border: 0px;
+    border-bottom: 2px solid #58135d;
+    cursor: pointer !important;
+}
+.react-select__menu {
+    margin-top: 10px;
+    background: #fffcfb;
+    box-shadow: 0px 0px 12px 4px rgba(52, 37, 58, 0.35);
+    border-radius: 8px;
+    & div {
+        max-height: 200px;
+    }
+}
+.react-select__menu-list {
+    max-height: 200px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: #fffcfb;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: #58135d;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 4px;
+        background-color: #fffcfb;
+    }
+}
+.react-select__option {
+    padding: 0 25px;
+    font-size: 18px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    color: #391e3b;
+    transition: 0.3s;
+    cursor: pointer !important;
+    &:not(:last-child) {
+        border-bottom: 1px solid #58135d;
+    }
+    &:hover {
+        background-color: #58135d;
+        color: #fff;
+    }
+}

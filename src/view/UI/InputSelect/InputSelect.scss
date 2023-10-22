@@ -1,0 +1,94 @@
+.react-select-container {
+    height: 60px !important;
+    /*     margin-bottom: 30px; */
+    /*     flex: 0 1 50%; */
+    /*   width: 50%; */
+}
+.inputSelect {
+    flex: 0 1 50%;
+}
+.react-select__control {
+    height: 60px;
+    transition: 0.3s !important;
+    cursor: pointer !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+.react-select__value-container {
+    padding: 0 40px !important;
+    display: flex;
+    flex-wrap: nowrap !important;
+    overflow-x: scroll;
+}
+.react-select__input-container {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    & input {
+        color: #000;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+.react-select__single-value {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+}
+.react-select__indicators {
+}
+.react-select__menu {
+    margin: 0 !important;
+    top: 105% !important;
+    overflow: hidden !important;
+}
+.react-select__menu-list {
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: #fff;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: #4d4d4d;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    padding: 0 !important;
+}
+.react-select__option {
+    height: 60px;
+    color: #000 !important;
+    font-size: 20px !important;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0 40px !important;
+    display: flex !important;
+    align-items: center;
+    cursor: pointer !important;
+    transition: 0.3s;
+    &:not(:last-child) {
+        border-bottom: 1px solid #00000050;
+    }
+}
+.react-select__control--is-focused {
+    border: 1px solid #000 !important;
+    box-shadow: none !important;
+}
+.react-select__option--is-focused {
+    background-color: #f4f4f4 !important;
+}
+.react-select__option--is-selected {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.react-select__multi-value__label {
+    font-size: 20px !important;
+}
+.react-select__placeholder {
+    font-size: 20px;
+}

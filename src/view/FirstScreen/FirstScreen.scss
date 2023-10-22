@@ -1,0 +1,23 @@
+.swiper-pagination {
+    position: absolute !important;
+    width: 22px !important;
+    right: 0 !important;
+    top: 45% !important;
+    left: inherit !important;
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: end;
+    gap: 10px;
+}
+.swiper3 {
+    position: relative !important;
+}
+.swiper-pagination-bullet-active {
+    background: #000 !important;
+}
+@media (max-width: 767px) {
+    .swiper-pagination {
+        top: 50% !important;
+    }
+}

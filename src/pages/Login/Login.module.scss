@@ -1,0 +1,52 @@
+.authentication {
+}
+.authentication__form {
+    display: flex;
+    gap: 20px;
+}
+.authentication__title {
+    flex: 0 1 50%;
+    color: #000;
+    font-size: 190px;
+    font-weight: 700;
+    line-height: 174px;
+}
+.authentication__subtitle {
+    font-size: 18px;
+    line-height: 34.5%;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+}
+.authentication__link {
+    font-size: 16px;
+    line-height: 34.5%;
+    margin-top: 30px;
+    color: #b4b4b4;
+}
+.authenticationBlock {
+    border-radius: 55px;
+    background: #fff;
+    padding: 70px 50px;
+    flex: 0 1 50%;
+    & button{
+        font-weight: 500;
+    }
+}
+@media (max-width: 767px){
+    .authentication__form{
+        flex-direction: column;
+    }
+    .authentication__title{
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .authenticationBlock{
+        padding: 30px 15px;
+        border-radius: 20px;
+
+        & button{
+            max-height: 60px;
+        }
+    }
+    
+}

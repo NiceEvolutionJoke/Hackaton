@@ -1,0 +1,34 @@
+.HeaderBurgerPoint{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 30px 25px;
+    padding-top: 100px;
+    z-index: 11;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(7.5px);
+    & ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    & li{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #000;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        & span{
+            width: 25px;
+            height: 2px;
+            background-color: #000;
+            border-radius: 20px;
+        }
+    }
+}

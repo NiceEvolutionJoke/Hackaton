@@ -1,0 +1,27 @@
+.authentication {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 92px);
+}
+.authentication__form {
+    max-width: 387px;
+    margin: 0 auto;
+}
+.authentication__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 242%;
+    color: #202020;
+}
+.authentication__subtitle {
+    font-size: 18px;
+    line-height: 34.5%;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+}
+.authentication__link {
+    font-size: 16px;
+    line-height: 34.5%;
+    margin-top: 30px;
+    color: #b4b4b4;
+}

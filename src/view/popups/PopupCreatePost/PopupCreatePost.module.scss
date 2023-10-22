@@ -1,0 +1,44 @@
+.title {
+    color: #000;
+    font-size: 51px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+.editor {
+    margin-bottom: 30px;
+}
+.inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+.qrcode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    & a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 30px;
+        border-radius: 15px;
+        background-color: #000;
+        border: 1px solid #000;
+        transition: 0.3s;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}
